@@ -18,7 +18,8 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./ FYP/FYP.csproj
+      - cd FYP
+      - dotnet publish -c Release -o ./
 
 artifacts:
   files:
