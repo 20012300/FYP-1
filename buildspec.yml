@@ -18,8 +18,11 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ../ FYP/FYP.csproj
+      - mkdir source
+      - dotnet publish -c Release -o ./source FYP/FYP.csproj
+      - ls source
 
 artifacts:
   files:
     - '**/*'
+  base-directory: 'source'
