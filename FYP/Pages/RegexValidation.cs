@@ -14,19 +14,19 @@ public class RegexValidation
 
     public bool ValidateFirstName()
     {
-        return RegexValidation.IsMatch(name, NAME_REGEX);
+        return RegexValidation.IsMatch(clientInfo.name, NAME_REGEX);
     }
     public bool ValidateEmail()
     {
-        return RegexValidation.IsMatch(email, EMAIL_REGEX);
+        return RegexValidation.IsMatch(clientInfo.email, EMAIL_REGEX);
     }
     public bool ValidateMobileNumber()
     {
-        return RegexValidation.isMatch(phone, MOBILENUMBER_REGEX);
+        return RegexValidation.isMatch(clientInfo.phone, MOBILENUMBER_REGEX);
     }
     public bool validateADDRESS_REGEX()
     {
-        return RegexValidation.isMatch(address, ADDRESS_REGEX);
+        return RegexValidation.isMatch(clientInfo.address, ADDRESS_REGEX);
     }
 
 }
